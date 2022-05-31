@@ -566,7 +566,6 @@ img {
 
 .feature-container {
   display: flex;
-  align-items: center;
 }
 
 .feature-list {
