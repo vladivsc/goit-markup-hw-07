@@ -490,6 +490,10 @@ img {
 .link-policy {
   color: var(--accent-color);
 }
+.send {
+  display: flex;
+  justify-content: center;
+}
 
 .submit-btn {
   min-width: 200px;
