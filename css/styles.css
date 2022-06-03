@@ -113,6 +113,9 @@ img {
   padding-bottom: 94px;
 }
 
+.btn {
+}
+
 /* *Header* */
 
 .header {
@@ -121,41 +124,42 @@ img {
 }
 
 .header-container {
-  height: 80px;
-
   display: flex;
   align-items: center;
+
+  height: 80px;
 }
 
 .navigation,
-.navigation-list {
+.navigation__list {
   display: flex;
   align-items: center;
 }
 
-.navigation-item {
+.navigation__item {
   margin-left: 50px;
 }
 
-.navigation-item:first-child {
+.navigation__item:first-child {
   margin-left: 93px;
 }
 
-.navigation-contacts {
+.header-contacts {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
-.navigation-contacts-item {
+.header-contacts__item {
   margin-right: 30px;
 }
 
-.navigation-contacts-item:last-child {
+.header-contacts__item:last-child {
   margin-right: 0px;
 }
 
 /* Логотип */
+
 .logo {
   display: flex;
   align-items: center;
@@ -181,7 +185,7 @@ img {
   color: var(--secondary-color);
 }
 
-.navigation-link {
+.navigation__link {
   position: relative;
 
   padding: 32px 0px;
@@ -197,7 +201,7 @@ img {
   transition: color var(--fast-anim);
 }
 
-.navigation-link.current::after {
+.navigation__link.current::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -210,7 +214,7 @@ img {
   border-radius: 2px;
 }
 
-.navigation-link-contacts {
+.header-contacts__link {
   display: flex;
   align-items: center;
 
@@ -225,17 +229,17 @@ img {
   transition: color var(--fast-anim);
 }
 
-.contacts-icon {
+.header-contacts__icon {
   margin-right: 10px;
 
   fill: currentColor;
 }
 
 /* Эффект ховера и фокуса */
-.navigation-link:hover,
-.navigation-link:focus,
-.navigation-link-contacts:hover,
-.navigation-link-contacts:focus {
+.navigation__link:hover,
+.navigation__link:focus,
+.header-contacts__link:hover,
+.header-contacts__link:focus {
   color: var(--accent-color);
 }
 
