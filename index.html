@@ -54,10 +54,10 @@
           </ul>
         </nav>
 
-        <ul class="list header-contacts">
+        <ul class="header-contacts list">
           <li class="item header-contacts__item">
             <a
-              class="link header-contacts__link"
+              class="header-contacts__link link"
               href="mailto:info@devstudio.com"
               ><svg class="header-contacts__icon" width="16" height="12">
                 <use href="./images/sprite.svg#icon-mail"></use>
@@ -65,8 +65,8 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="item header-contacts__item">
-            <a class="link header-contacts__link" href="tel:+380961111111">
+          <li class="header-contacts__item item">
+            <a class="header-contacts__link link" href="tel:+380961111111">
               <svg class="header-contacts__icon" width="10" height="16">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
@@ -78,70 +78,72 @@
     </header>
     <!--*Hero section*-->
     <main>
-      <section class="section hero-section">
+      <section class="section hero">
         <div class="container hero-container">
           <h1 class="hero-title">EFFICIENT SOLUTIONS FOR YOUR BUSINESS</h1>
-          <button class="hero-btn" type="button" data-modal-open>
+          <button class="hero-btn btn" type="button" data-modal-open>
             Order Now
           </button>
         </div>
       </section>
       <!--visually-hidden  CSS -->
       <h2 class="visually-hidden">Our features</h2>
-      <!--*Секция "Особенности"*-->
-      <section class="section feature-section">
+
+      <!--*Section Our features*-->
+
+      <section class="section feature">
         <div class="container feature-container">
-          <ul class="list feature-list">
-            <li class="item feature-item">
-              <div class="feature-box-icons">
-                <svg class="feature-icons" width="70" height="70">
+          <ul class="list feature__list">
+            <li class="item feature__item">
+              <div class="feature-box">
+                <svg class="feature-box__icons" width="70" height="70">
                   <use href="./images/sprite.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="feature-title">Attention to detail</h3>
-              <p class="text feature-text">
+              <h3 class="feature__title">Attention to detail</h3>
+              <p class="text feature__text">
                 Ideas and considerations, as well as the beginning of daily work
                 on the formation of a position.
               </p>
             </li>
           </ul>
-          <ul class="list feature-list">
-            <li class="item feature-item">
-              <div class="feature-box-icons">
-                <svg class="feature-icons" width="70" height="70">
+          <ul class="list feature__list">
+            <li class="item feature__item">
+              <div class="feature-box">
+                <svg class="feature-box__icons" width="70" height="70">
                   <use href="./images/sprite.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="feature-title">Punctuality</h3>
-              <p class="text feature-text">
+              <h3 class="feature__title">Punctuality</h3>
+              <p class="text feature__text">
                 One of the main tasks of the organization, the culture and
                 quality of staff training entails a high level of service.
               </p>
             </li>
           </ul>
-          <ul class="list feature-list">
-            <li class="item feature-item">
-              <div class="feature-box-icons">
-                <svg class="feature-icons" width="70" height="70">
+          <ul class="list feature__list">
+            <li class="item feature__item">
+              <div class="feature-box">
+                <svg class="feature-box__icons" width="70" height="70">
                   <use href="./images/sprite.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="feature-title">Planning</h3>
-              <p class="text feature-text">
+              <h3 class="feature__title">Planning</h3>
+              <p class="text feature__text">
                 Focus on the correct distribution of tasks and tracking
                 incremental success.
               </p>
             </li>
           </ul>
-          <ul class="list feature-list">
-            <li class="item feature-item">
-              <div class="feature-box-icons">
-                <svg class="feature-icons" width="70" height="70">
+          <ul class="list feature__list">
+            <li class="item feature__item">
+              <div class="feature-box">
+                <svg class="feature-box__icons" width="70" height="70">
                   <use href="./images/sprite.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="feature-title">Modern technologies</h3>
-              <p class="feature-text">
+              <h3 class="feature__title">Modern technologies</h3>
+              <p class="feature__text">
                 The importance of technologies is so obvious that the
                 implementation of planned targets without them is impossible.
               </p>
@@ -152,33 +154,36 @@
 
       <!--*Section *What are we doing* *-->
 
-      <section class="section activities-section">
-        <div class="container container-activities">
-          <h2 class="title activities-title">What are we doing</h2>
-          <ul class="list activities-list">
-            <li class="item activities-item">
+      <section class="section activities">
+        <div class="container activities - container">
+          <h2 class="title activities__title">What are we doing</h2>
+          <ul class="list activities__list">
+            <li class="item activities__item">
               <img
+                class="activities__img"
                 src="./images/main/box-1.jpg"
                 alt="App Development"
                 width="370"
               />
-              <p class="activities-text">DESKTOP APPS</p>
+              <p class="activities__text">DESKTOP APPS</p>
             </li>
-            <li class="item activities-item">
+            <li class="item activities__item">
               <img
+                class="activities__img"
                 src="./images//main/box-2.jpg"
                 alt="Mobile app"
                 width="370"
               />
-              <p class="activities-text">MOBILE APPS</p>
+              <p class="activities__text">MOBILE APPS</p>
             </li>
-            <li class="item activities-item">
+            <li class="item activities__item">
               <img
+                class="activities__img"
                 src="./images//main/box-3.jpg"
                 alt="Design Development"
                 width="370"
               />
-              <p class="activities-text">DESIGN SOLUTIONS</p>
+              <p class="activities__text">DESIGN SOLUTIONS</p>
             </li>
           </ul>
         </div>
@@ -186,11 +191,11 @@
 
       <!--*Section *Our Team* *-->
 
-      <section class="section team-section">
+      <section class="section team">
         <div class="container team-container">
-          <h2 class="title team-title">Our team</h2>
-          <ul class="list team-list">
-            <li class="item team-item">
+          <h2 class="title team__title">Our team</h2>
+          <ul class="list team__list">
+            <li class="item team__item">
               <img
                 src="./images//main/person-1.jpg"
                 alt="Designer"
@@ -257,7 +262,7 @@
                 </ul>
               </div>
             </li>
-            <li class="item team-item">
+            <li class="item team__item">
               <img
                 src="./images//main/person-2.jpg"
                 alt="Developer"
@@ -324,7 +329,7 @@
                 </ul>
               </div>
             </li>
-            <li class="item team-item">
+            <li class="item team__item">
               <img
                 src="./images//main/person-3.jpg"
                 alt="Marketer"
@@ -391,7 +396,7 @@
                 </ul>
               </div>
             </li>
-            <li class="item team-item">
+            <li class="item team__item">
               <img
                 src="./images//main/person-4.jpg"
                 alt="UI Designer"
@@ -648,7 +653,7 @@
               id="footer-email"
               placeholder="E-mail"
             />
-            <button type="submit" class="subscribe-btn">
+            <button type="submit" class="btn subscribe-btn">
               <span class="subscribe-text">Subscribe</span>
               <svg class="" width="24" height="24">
                 <use href="./images/sprite.svg#icon-send"></use>
@@ -733,7 +738,9 @@
 
           <!-- *Send btn -->
           <div class="send">
-            <button class="submit-btn" type="submit" name="submit">Send</button>
+            <button class="btn submit-btn" type="submit" name="submit">
+              Send
+            </button>
           </div>
         </form>
       </div>
