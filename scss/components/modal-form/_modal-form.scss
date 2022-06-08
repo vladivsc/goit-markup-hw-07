@@ -75,6 +75,8 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
+  transition: border-color var(--fast-anim);
+
     &:focus,
     &:hover {
       border-color: var(--accent-color);

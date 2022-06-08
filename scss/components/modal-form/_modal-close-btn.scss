@@ -19,6 +19,8 @@
 
   cursor: pointer;
 
+  transition: fill var(--fast-anim);
+
   &:hover,
   &:focus {
     fill: var(--accent-color);
