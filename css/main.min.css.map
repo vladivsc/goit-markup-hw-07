@@ -11,7 +11,7 @@
         "../scss/components/_logo.scss",
         "../scss/components/_buttons.scss",
         "../scss/components/_socials.scss",
-        "../scss/components/modal-form/_modal.scss",
+        "../scss/components/modal-form/_module.scss",
         "../scss/components/modal-form/_backdrop.scss",
         "../scss/components/modal-form/_modal-form.scss",
         "../scss/components/modal-form/_modal-close-btn.scss",

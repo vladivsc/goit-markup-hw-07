@@ -19,7 +19,7 @@
 
   &:first-child {
     margin-left: 93px;
-    }
+  }
 }
 .navigation__link {
   position: relative;
@@ -35,10 +35,10 @@
 
   transition: color var(--fast-anim);
 
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .navigation__link--current::after {
@@ -65,7 +65,7 @@
 
   &:last-child {
     margin-right: 0px;
-    }
+  }
 }
 
 .header-contacts__link {
@@ -82,10 +82,10 @@
 
   transition: color var(--fast-anim);
 
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .header-contacts__icon {
