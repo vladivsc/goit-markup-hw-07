@@ -10,6 +10,11 @@
   transition: opacity var(--fast-anim), visibility var(--fast-anim);
 
   z-index: 10;
+
+  &.modal-wrapper {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
 }
 
 .is-hidden {
@@ -32,15 +37,14 @@
   border-radius: 4px;
 
   transition: transform 300ms ease-in-out 200ms, opacity 300ms ease-in-out 200ms;
+
+  .is-hidden & {
+    transform: translate(-50%, -50%) scale(0.4);
+    opacity: 0;
+  }
 }
 
-.backdrop.is-hidden .modal-wrapper {
-  transform: translate(-50%, -50%) scale(0.4);
-  opacity: 0;
-}
-
-.backdrop.modal-wrapper {
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
-}
-
+// .is-hidden .modal-wrapper {
+//   transform: translate(-50%, -50%) scale(0.4);
+//   opacity: 0;
+// }

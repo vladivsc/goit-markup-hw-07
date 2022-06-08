@@ -49,10 +49,10 @@
 
   cursor: pointer;
 
-    &:focus,
-    &:hover {
-      border-color: var(--accent-color);
-    }
+  &:focus,
+  &:hover {
+    border-color: var(--accent-color);
+  }
 }
 
 .modal-form__icon {
@@ -61,6 +61,11 @@
   top: 50%;
 
   transition: fill var(--fast-anim);
+
+  .modal-form__input:focus,
+  .modal-form__input:hover + & {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-form__textarea {
@@ -77,15 +82,10 @@
 
   transition: border-color var(--fast-anim);
 
-    &:focus,
-    &:hover {
-      border-color: var(--accent-color);
-    }
-}
-
-.modal-form__input:focus,
-.modal-form__input:hover+.modal-form__icon {
-  fill: var(--accent-color);
+  &:focus,
+  &:hover {
+    border-color: var(--accent-color);
+  }
 }
 
 .modal-form__policy {

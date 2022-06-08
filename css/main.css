@@ -260,6 +260,12 @@ img {
   z-index: 10;
 }
 
+.backdrop.modal-wrapper {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -281,16 +287,10 @@ img {
   transition: transform 300ms ease-in-out 200ms, opacity 300ms ease-in-out 200ms, -webkit-transform 300ms ease-in-out 200ms;
 }
 
-.backdrop.is-hidden .modal-wrapper {
+.is-hidden .modal-wrapper {
   -webkit-transform: translate(-50%, -50%) scale(0.4);
           transform: translate(-50%, -50%) scale(0.4);
   opacity: 0;
-}
-
-.backdrop.modal-wrapper {
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
 }
 
 .modal-title {
@@ -351,6 +351,11 @@ img {
   transition: fill var(--fast-anim);
 }
 
+.modal-form__icon .modal-form__input:focus,
+.modal-form__input:hover + .modal-form__icon {
+  fill: var(--accent-color);
+}
+
 .modal-form__textarea {
   resize: none;
   width: 100%;
@@ -366,11 +371,6 @@ img {
 
 .modal-form__textarea:focus, .modal-form__textarea:hover {
   border-color: var(--accent-color);
-}
-
-.modal-form__input:focus,
-.modal-form__input:hover + .modal-form__icon {
-  fill: var(--accent-color);
 }
 
 .modal-form__policy {
